@@ -1,0 +1,124 @@
+.viewbuttons {
+    margin-top: 10px;
+    text-align: center;
+	}
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-primary.inverse-colors {
+    color: #C64E61;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.viewbuttons a, .viewbuttons p {
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+    line-height: normal;
+}
+.viewbuttons a i, .viewbuttons p i {
+    font-size: 28px;
+}
+.controls.styledradio {
+    text-align: center;
+}
+.field i.fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #C64E61;
+    background: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    width: 38px;
+    height: 100%;
+    cursor: pointer;
+}
+field input[type="radio"].styled, .field input[type="checkbox"].styled {
+    height: 0 !important;
+    width: 0 !important;
+}
+.viewbuttons a.btn-xs i, .viewbuttons p.btn-xs i {
+    font-size: 14px;
+    position: static;
+    height: auto;
+    top: inherit;
+    display: inline-block;
+    float: none;
+    margin: 0;
+    line-height: normal;
+    left: inherit;
+    width: inherit;
+    background: none;
+}
+.viewbuttons a span, .viewbuttons p span {
+    font-size: 12px;
+    display: inline-block;
+    line-height: normal;
+    float: none;
+}
+.field input, .field textarea, .field select {
+    padding: 12px 2px 12px 40px !important;
+    width: 100% !important;
+    float: left;
+    color: #222222;
+    font-size: 12px;
+    border: 1px solid #ffffff !important;
+    box-sizing: border-box;
+    margin: 0;
+    height: auto;
+    line-height: 14px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.field input[type="radio"].styled, .field input[type="checkbox"].styled {
+    height: 0 !important;
+    width: 0 !important;
+}
+.field .styledradio label {
+    display: inline-block;
+    width: auto;
+}
+.field input[type="radio"].styled + label i.radio, .field input[type="checkbox"].styled + label i.radio {
+    width: 40px;
+    height: 40px !important;
+    position: relative;
+    color: #E3E3E3;
+    display: block;
+    background: none;
+    font-size: 40px;
+    padding: 0;
+    margin: auto;
+}
+
+.field input[type="radio"].styled:checked + label i.radio, .field input[type="checkbox"].styled:checked + label i.radio {
+    color: #C64E61;
+    text-shadow: none;
+}
+.viewbuttons {
+    margin-top: 0;
+    text-align: center;
+}
+
+a.btn-primary.btn-icon.inverse-colors:hover {
+    color: #fff;
+    background: #C64E61;
+}
+a.btn-primary.btn-icon.inverse-colors:hover i.fa{
+    color: #fff;
+}
+#results {
+    background: #ffffff;
+    max-width: 700px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+#results.open {
+    padding: 20px 30px;
+    margin: 40px auto;
+}

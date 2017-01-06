@@ -1,0 +1,45 @@
+/*----FORMREGISTRATIONRULES----*/  
+.register-form ul { list-style: none; }
+.register-form { text-align: center; }
+.prenotationtext { border: solid #0f692f; }
+label#foodterm0-lbl { padding: 0px 10px 0px 10px; }
+label#foodterm1-lbl { padding: 0px 10px 0px 10px; }
+label#foodterm2-lbl { padding: 0px 10px 0px 10px; }
+input#termcondition1 { width: 30px; }
+input#termcondition0 { width: 30px; }
+.styledradio .radio i { font-size: 30px; color: #9a9a9a; }
+.styledradio input:checked+label i { color: #ec6629; }
+#_pwf_registration_termcondition1:checked+label i { color: #0f692f; }
+#_pwf_registration_termcondition0:checked+label i { color: #ec6629; }
+.styledradio .radio + input { display: none; }
+.styledradio input { display: none; }
+.styledradio input:checked + label#termcondition1-lbl i { color: #0f692f; }
+.styledradio input:checked + label#termcondition0-lbl i { color: #ec6629; }
+.startingtextreg p { font-size: 30px; }
+.descriptionreg { border-bottom: solid #0f692f; }
+.foodmanagement label { margin-top: 10px; }
+#testimonialsform ul li:nth-child(16) { font-size: 20px; }
+.prenotationtext p { font-size: 30px; }
+.field label { font-size: 20px; }
+.containerbtn button { padding: 15px 50px; margin-top: 10px; margin-bottom: 10px; font-weight: bold; text-transform: uppercase; }
+.containerbtn button:hover { background: #0f692f; color: #ec6629; transition: all 1s; }
+#testimonialsform input, #testimonialsform textarea { border-radius: 0; border-color: #c64e61; }
+#testimonialsform textarea { }
+#testimonialsform input:active { border: solid 1px #ec6629; }
+#testimonialsform textarea:active { border: solid 1px #ec6629; }
+.prenotationtext p { border-bottom: solid #0f692f; }
+.styledupload { margin-top: 20px; }
+.styledupload .inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+.styledupload label strong { opacity: .47; }
+.styledupload label.active, .styledupload label:hover strong { opacity: 1; }
+.styledupload label { background-color: transparent; padding: 0; position: relative; display: block; border: 1px solid; }
+.styledupload .inputfile:focus + label, .styledupload .inputfile.has-focus + label, .styledupload label { border-color: #c64e61; }
+.styledupload label span, .styledupload label strong { padding: 13px 9px 14px;/* 10px 20px */ }
+.styledupload label span { width: 100%; min-height: 2em; display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; vertical-align: top; box-sizing: border-box; }
+.styledupload label strong { height: 100%; color: #000; background-color: #c64e61; display: block; position: absolute; height: 100%; top: 0; right: 0; }
+
+@media screen and (max-width: 50em) {
+.styledupload + label strong { display: block; }
+}
+
+/*----ENDFORMREGISTRATIONRULES----*/
