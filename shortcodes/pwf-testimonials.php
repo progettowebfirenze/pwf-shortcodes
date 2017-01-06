@@ -51,8 +51,8 @@ function testimonials_metaboxes()
 add_action('wp_enqueue_scripts', 'ajaxtestimonials_enqueuescripts');
 function ajaxtestimonials_enqueuescripts()
 {
-	wp_enqueue_style( 'pwf-testimonials-css', PWFURL.'/pwf-plugin/assets/css/pwfstyle-testimonials.css', array(), time() );
-	wp_enqueue_script('pwf-ajaxtestimonials', PWFURL.'/pwf-plugin/assets/js/ajaxtestimonials.js', array(JQUERY_NAME), time(), true);
+	wp_enqueue_style( 'pwf-testimonials-css', PWFURL.'/pwf-plugin/assets/css/pwfstyle-testimonials.css', array(), 1.0 );
+	wp_enqueue_script('pwf-ajaxtestimonials', PWFURL.'/pwf-plugin/assets/js/ajaxtestimonials.js', array(JQUERY_NAME), 1.0, true);
 	wp_localize_script( 'pwf-ajaxtestimonials', 'ajaxtestimonials', admin_url( 'admin-ajax.php' ) );
 }
 

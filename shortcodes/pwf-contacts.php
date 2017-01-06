@@ -67,8 +67,8 @@ function cpt_contacts_metaboxes()
 add_action('wp_enqueue_scripts', 'ajaxcontact_enqueuescripts');
 function ajaxcontact_enqueuescripts()
 {
-	wp_enqueue_style( 'pwf', PWFURL.'/pwf-plugin/assets/css/pwfstyle-contacts.css', array(), time() );	
-	wp_enqueue_script('pwf-ajaxcontact', PWFURL.'/pwf-plugin/assets/js/ajaxcontacts.js', array(JQUERY_NAME), time(), true);
+	wp_enqueue_style( 'pwf', PWFURL.'/pwf-plugin/assets/css/pwfstyle-contacts.css', array(), 1.0 );	
+	wp_enqueue_script('pwf-ajaxcontact', PWFURL.'/pwf-plugin/assets/js/ajaxcontacts.js', array(JQUERY_NAME), 1.0, true);
 	wp_localize_script( 'pwf-ajaxcontact', 'ajaxcontact', admin_url( 'admin-ajax.php' ) );
 }
 

@@ -57,8 +57,8 @@ function newsletter_metaboxes()
 add_action('wp_enqueue_scripts', 'newsletter_enqueuescripts');
 function newsletter_enqueuescripts()
 {
-	wp_enqueue_style( 'pwf', PWFURL.'/pwf-plugin/assets/css/newsletter.css', array(), time() );
-	wp_enqueue_script('pwf-newsletter', PWFURL.'/pwf-plugin/assets/js/newsletter.js', array(JQUERY_NAME), time(), true);
+	wp_enqueue_style( 'pwf', PWFURL.'/pwf-plugin/assets/css/newsletter.css', array(), 1.0 );
+	wp_enqueue_script('pwf-newsletter', PWFURL.'/pwf-plugin/assets/js/newsletter.js', array(JQUERY_NAME), 1.0, true);
 	wp_localize_script( 'pwf-newsletter', 'newsletterajax', admin_url('admin-ajax.php') );
 }
 
