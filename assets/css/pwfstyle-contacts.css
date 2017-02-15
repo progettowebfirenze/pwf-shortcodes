@@ -99,6 +99,9 @@ field input[type="radio"].styled, .field input[type="checkbox"].styled {
     color: #C64E61;
     text-shadow: none;
 }
+.field input[type="radio"].styled:checked + label i.radio.fa-check, .field input[type="checkbox"].styled:checked + label i.radio.fa-check {
+    color: #017630;
+}
 .viewbuttons {
     margin-top: 0;
     text-align: center;
@@ -112,13 +115,52 @@ a.btn-primary.btn-icon.inverse-colors:hover i.fa{
     color: #fff;
 }
 #results {
-    background: #ffffff;
-    max-width: 700px;
-    position: relative;
-    text-align: center;
-    margin: auto;
+	background: #FFF;
+	padding: 20px 30px;
+	max-width: 700px;
+	margin: 40px auto;
+	position: relative;
+	text-align: center
 }
+
+#results .actions {
+}
+
+#results .actions a.modalBtn {
+	display: inline-block;
+	width: 50%;
+	height: 3em;
+	line-height: 3em;
+	color: #fff;
+	text-align: center
+}
+
+#results .actions a.modalBtn.btn-left {
+	background-color: #555
+}
+
+#results .actions a.modalBtn.btn-right {
+	background-color: #017630
+}
+
 #results.open {
-    padding: 20px 30px;
-    margin: 40px auto;
+	padding: 20px 30px;
+	margin: 40px auto
+}
+
+#results.error {
+	border: 3px solid #f00;
+	background: #E19797
+}
+
+#results.error .actions a.modalBtn.btn-left {
+	background-color: #f00
+}
+
+#results.error .actions a.modalBtn.btn-right {
+	background-color: #f00
+}
+
+#results.error p {
+	color: #f00
 }

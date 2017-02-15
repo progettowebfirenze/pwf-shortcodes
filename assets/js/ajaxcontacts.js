@@ -31,7 +31,20 @@ jQuery(document).ready(function($) {
                     $('body').append('<div id="results"></div>');
                     $('#results').append("<div>" + msg.html + "</div>");
                     $('#results').show();
-                    $.magnificPopup.open({
+					
+					fbq('track', 'Lead', {
+					  content_name: msg.page, 
+					  content_category: msg.type,
+					});  
+                    
+					goog_snippet_vars = function() {
+						var w = window;
+						w.google_conversion_id = 991394363;
+						w.google_conversion_label = msg.page;
+						w.google_remarketing_only = false;
+					}
+					
+					$.magnificPopup.open({
                         items: {
                             src: '#results',
                             type: 'inline'
@@ -103,7 +116,7 @@ jQuery(document).ready(function($) {
 								};	
 							}
                     },
-                    stringLength: {
+                    /*stringLength: {
                         min: 20,
                         message: function(validator, $field, validatorName) {
 								return {							
@@ -111,7 +124,7 @@ jQuery(document).ready(function($) {
 								en_GB: 'Write jus a little bit more',
 								};	
 							}
-                    }
+                    }*/
                 }
             },
         }
